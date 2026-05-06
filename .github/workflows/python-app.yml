@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +22,6 @@ jobs:
       run: |
         pip install flask
 
-    - name: Run app check
+    - name: Test import
       run: |
         python -c "import flask"
